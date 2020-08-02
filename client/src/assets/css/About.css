@@ -1,8 +1,7 @@
 #about-me {
   margin: 40px;
-  border: 1px gray solid;
-  padding: 10px;
   font-family: "Crimson Text", serif;
+  font-size: 25px;
 }
 
 #about-header {

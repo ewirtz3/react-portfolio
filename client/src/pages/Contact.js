@@ -1,11 +1,6 @@
 import React from "react";
-import Nav from "../components/Nav";
-import { Container } from "semantic-ui-react";
+import { Button, Divider, Form } from "semantic-ui-react";
 
-export default function About() {
-  return (
-    <Container>
-      <Nav />
-    </Container>
-  );
+export default function Contact() {
+  return <p>contact</p>;
 }
