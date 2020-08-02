@@ -2,4 +2,14 @@
   margin: 40px;
   border: 1px gray solid;
   padding: 10px;
+  font-family: "Crimson Text", serif;
+}
+
+#about-header {
+  font-family: "Lobster", cursive;
+  margin-left: 40px;
+}
+
+#profile-pic {
+  border-radius: 15px;
 }

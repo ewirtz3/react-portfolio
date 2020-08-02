@@ -12,7 +12,7 @@ function Nav() {
       <Grid.Row>
         <Grid.Column>
           <Header size="huge" id="emily">
-            <i class="fas fa-code"></i>
+            <i className="fas fa-code"></i>
             <span> </span>emily wirtz
           </Header>
         </Grid.Column>
