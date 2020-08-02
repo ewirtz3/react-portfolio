@@ -1,11 +1,11 @@
 import React from "react";
 import "semantic-ui-css/semantic.min.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Nav from "../components/Nav";
-import About from "../components/About";
-import Contact from "../components/Contact";
-import Portfolio from "../components/Portfolio";
-import NoMatch from "../components/NoMatch";
+import Nav from "./components/Nav";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Portfolio from "./pages/Portfolio";
+import NoMatch from "./pages/NoMatch";
 
 function App() {
   return (
