@@ -1,11 +1,16 @@
 import React from "react";
-import Nav from "../components/Nav";
-import { Container } from "semantic-ui-react";
+import { Container, Segment, Header } from "semantic-ui-react";
+import PortfolioCards from "../components/PortfolioCards";
 
-export default function About() {
+export default function Portfolio() {
   return (
-    <Container>
-      <Nav />
+    <Container id="portfolio-container">
+      <Segment raised centered id="portfolio-segment">
+        <Header size="large" id="portfolio-header">
+          Portfolio
+        </Header>
+        <Portfolio />
+      </Segment>
     </Container>
   );
 }

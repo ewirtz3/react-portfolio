@@ -8,7 +8,11 @@ export default function Contact() {
       <Segment centered raised id="contact-segment">
         <Form size="big">
           <Form.Input label="name" control="input" placeholder="Your name" />
-          <Form.Input label="email" control="input" placeholder="Your email" />
+          <Form.Input
+            label="email"
+            control="input"
+            placeholder="Your email address"
+          />
           <Form.Field
             control={TextArea}
             label="message"
