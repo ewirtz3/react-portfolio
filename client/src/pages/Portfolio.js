@@ -5,11 +5,11 @@ import PortfolioCards from "../components/PortfolioCards";
 export default function Portfolio() {
   return (
     <Container id="portfolio-container">
-      <Segment raised centered id="portfolio-segment">
+      <Segment raised centered="true" id="portfolio-segment">
         <Header size="large" id="portfolio-header">
           Portfolio
         </Header>
-        <Portfolio />
+        <PortfolioCards />
       </Segment>
     </Container>
   );
