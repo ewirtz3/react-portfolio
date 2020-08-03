@@ -15,7 +15,7 @@ export default function About() {
         <Grid.Row>
           <Segment raised>
             <Image
-              src={require("../assets/images/IMG_2340 copy.jpg")}
+              src={require("../assets/images/profilePic.jpg")}
               size="medium"
               id="profile-pic"
               //
