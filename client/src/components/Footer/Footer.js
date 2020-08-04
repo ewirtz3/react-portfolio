@@ -1,6 +1,6 @@
 import React from "react";
 import { Segment, List, Container } from "semantic-ui-react";
-import "../assets/css/Footer.css";
+import "../../assets/css/Footer.css";
 
 export default function Footer() {
   return (

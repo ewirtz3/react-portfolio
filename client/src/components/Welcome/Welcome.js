@@ -1,12 +1,13 @@
 import React from "react";
 import { Container, Image, Segment, Header, Icon } from "semantic-ui-react";
-import "../assets/css/Welcome.css";
+import "../../assets/css/Welcome.css";
+import spain from "./spain5.jpg";
 
 export default function Welcome() {
   return (
     <Container id="home">
       <Segment raised textAlign="center">
-        <Image centered src={require("../assets/images/spain5.jpg")} circular />
+        <Image centered src={spain} circular />
         <Header as="h3" id="name">
           emily wirtz
         </Header>

@@ -1,7 +1,8 @@
 import React from "react";
 import { Container, Header, Grid, Image, Segment } from "semantic-ui-react";
 import "../assets/css/About.css";
-import AboutMeBlurb from "../components/AboutMe";
+import AboutMeBlurb from "../components/AboutMe/AboutMe";
+import profilePic from "../components/AboutMe/profilePic.jpg";
 
 export default function About() {
   return (
@@ -15,7 +16,7 @@ export default function About() {
         <Grid.Row>
           <Segment raised>
             <Image
-              src={require("../assets/images/profilePic.jpg")}
+              src={profilePic}
               size="medium"
               id="profile-pic"
               //

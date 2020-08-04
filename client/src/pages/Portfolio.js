@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Segment, Header } from "semantic-ui-react";
-import PortfolioCards from "../components/PortfolioCards";
+import PortfolioCards from "../components/PortfolioCards/PortfolioCards";
 import "../assets/css/Portfolio.css";
 
 export default function Portfolio() {
