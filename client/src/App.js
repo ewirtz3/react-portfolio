@@ -2,6 +2,7 @@ import React from "react";
 import "semantic-ui-css/semantic.min.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Nav from "./components/Nav";
+import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
@@ -14,7 +15,10 @@ function App() {
       <div>
         <Nav />
         <Switch>
-          <Route exact path={["/", "/about"]}>
+          <Route exact path={["/", "/home"]}>
+            <Home />
+          </Route>
+          <Route exact path="/about">
             <About />
           </Route>
           <Route exact path="/contact">

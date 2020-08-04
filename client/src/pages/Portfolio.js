@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Segment, Header } from "semantic-ui-react";
 import PortfolioCards from "../components/PortfolioCards";
+import "../assets/css/Portfolio.css";
 
 export default function Portfolio() {
   return (
@@ -9,6 +10,7 @@ export default function Portfolio() {
         <Header size="large" id="portfolio-header">
           Portfolio
         </Header>
+        <Header sub>Check out my work, both solo and as part of a team</Header>
         <PortfolioCards />
       </Segment>
     </Container>

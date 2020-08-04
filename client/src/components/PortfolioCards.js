@@ -10,7 +10,7 @@ export default function PortfolioCards() {
         "User provides city, is then provided the current forecast as well as the 5-day forecast.",
       repoLink: "https://github.com/ewirtz3/weather-dashboard",
       appLink: "https://ewirtz3.github.io/weather-dashboard/",
-      imageSrc: `{require("../assets/images/weatherDashPic.jpg")}`,
+      imageSrc: `"../assets/images/weatherDashPic.jpg"`,
       imageAlt: "Weather Dashboard App",
     },
     {
@@ -19,7 +19,7 @@ export default function PortfolioCards() {
         "Responsive application which takes in the user input to either provide a 5-day weather forecast or a random cocktail recipe.",
       repoLink: "https://github.com/ewirtz3/inside-or-outside",
       appLink: "https://ewirtz3.github.io/inside-or-outside/",
-      imageSrc: `{require("../assets/images/insideOrOutsidePic.jpg")}`,
+      imageSrc: `"../assets/images/insideOrOutsidePic.jpg"`,
       imageAlt: "Cocktails or Weather app",
     },
     {
@@ -28,7 +28,7 @@ export default function PortfolioCards() {
         "Heroku-deployed app enables the user to add new burgers to the left side of the page. If the user clicks the Devour It! button, the burger's devoured status changes to true and it reappears ont he right side of the page. Utilizes Express.js, Express Handlebars, MySQL, and an ORM.",
       repoLink: "https://github.com/ewirtz3/burger",
       appLink: "https://intense-dusk-43049.herokuapp.com/",
-      imageSrc: `{require("../assets/images/burgerApp.jpg")}`,
+      imageSrc: `"../assets/images/burgerApp.jpg"`,
       imageAlt: "Burger Builder App",
     },
     {
@@ -37,7 +37,7 @@ export default function PortfolioCards() {
         "React-based application that serves as an Employee Directory. Using class and functional React components, the page renders 200 employee info cards using an AJAX call via axios. The list may be sorted alphabetically or filtered by birth month.",
       repoLink: "https://github.com/ewirtz3/user-directory",
       appLink: "https://various-employees.herokuapp.com/",
-      imageSrc: `{require("../assets/images/userDirectory.jpg")}`,
+      imageSrc: `"../assets/images/userDirectory.jpg"`,
       imageAlt: "Employee Directory App",
     },
     {
@@ -46,7 +46,7 @@ export default function PortfolioCards() {
         "Full-stack application serves as a simple tracker for the user to log their minutes of exercise, glasses of water intake, and hours of sleep all in one place. User information is created upon sign up and stored in a database, which is updated as the user logs their health milestones.",
       repoLink: "https://github.com/ewirtz3/projectYOU",
       appLink: "https://projectyou.herokuapp.com/",
-      imageSrc: `{require("../assets/images/projectYou.jpg")}`,
+      imageSrc: `"../assets/images/projectYou.jpg"`,
       imageAlt: "Fitness Tracker App",
     },
     {
@@ -55,7 +55,7 @@ export default function PortfolioCards() {
         "This app enables the user to write, save, and delete notes. Application utilizes Express.js to give user full CRUD method capabilities, writing, reading, updating, and deleting data to/from a JSON file.",
       repoLink: "https://github.com/ewirtz3/note-taker",
       appLink: "https://stark-meadow-19348.herokuapp.com/",
-      imageSrc: `"{require("../assets/images/noteTaker.jpg")}`,
+      imageSrc: `"../assets/images/noteTaker.jpg"`,
       imageAlt: "Note Taker App",
     },
   ];
@@ -65,11 +65,13 @@ export default function PortfolioCards() {
       {projects.map((project, i) => {
         console.log(project.imageSrc);
         console.log(project.imageSrc.substring(1, project.imageSrc.length - 1));
+        const image = project.imageSrc;
+        console.log(`image:>>`, image);
         return (
           <Card key={i}>
             <Image
               //   src={project.imageSrc.substring(1, project.imageSrc.length)}
-              src={project.imageSrc}
+              //   src={require(image)}
               wrapped
             />
             <Card.Content>

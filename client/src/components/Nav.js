@@ -1,52 +1,21 @@
-import React, { useState } from "react";
-import { Header, Menu, Grid } from "semantic-ui-react";
+import React from "react";
+import { Header, Grid, Icon } from "semantic-ui-react";
 import "../assets/css/Nav.css";
+import MenuDropdown from "./menuDropdown";
 
 function Nav() {
-  const [activeItem, setActiveItem] = useState({
-    activeItem: "home",
-  });
-
   return (
-    <Grid columns={3} textAlign="center" id="nav">
-      <Grid.Row>
+    <Grid textAlign="center" id="nav">
+      <Grid.Row columns={3} verticalAlign="bottom">
         <Grid.Column>
           <Header size="huge" id="emily">
-            <i className="fas fa-code"></i>
-            <span> </span>emily wirtz
+            <Icon name="code" size="large" id="code" />
+            emily wirtz
           </Header>
         </Grid.Column>
         <Grid.Column />
         <Grid.Column>
-          <Menu secondary position="right" id="menu">
-            <Menu.Item
-              name="home"
-              active={activeItem === "home"}
-              onClick={() => {
-                setActiveItem({
-                  activeItem: "home",
-                });
-              }}
-            />
-            <Menu.Item
-              name="portfolio"
-              active={activeItem === "portfolio"}
-              onClick={() => {
-                setActiveItem({
-                  activeItem: "portfolio",
-                });
-              }}
-            />
-            <Menu.Item
-              name="contact"
-              active={activeItem === "contact"}
-              onClick={() => {
-                setActiveItem({
-                  activeItem: "contact",
-                });
-              }}
-            />
-          </Menu>
+          <MenuDropdown />
         </Grid.Column>
       </Grid.Row>
     </Grid>
