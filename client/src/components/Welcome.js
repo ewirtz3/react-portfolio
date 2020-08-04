@@ -5,14 +5,21 @@ import "../assets/css/Welcome.css";
 export default function Welcome() {
   return (
     <Container id="home">
-      <Segment raised>
+      <Segment raised textAlign="center">
         <Image centered src={require("../assets/images/spain5.jpg")} circular />
-        <Header as="h3" className="centered" id="name">
+        <Header as="h3" id="name">
           emily wirtz
         </Header>
-        <Header sub as="h5" className="centered">
+        <Header sub as="h5">
           Full Stack Web Developer
-          <Icon name="arrow alternate circle right outline" />
+          <a href="/about">
+            <Icon
+              link
+              size="large"
+              name="arrow alternate circle right outline"
+              color="teal"
+            />
+          </a>
         </Header>
       </Segment>
     </Container>
