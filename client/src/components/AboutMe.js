@@ -9,7 +9,7 @@ export default function AboutMeBlurb() {
         Administration from Creighton University.
       </p>
       <p>
-        I am a Fullstack Software Engineer based in Kansas City, but open to
+        I am a Full Stack Web Developer based in Kansas City, but open to
         relocating. I enjoy problem solving and critical thinking, and learning
         to code has been an enormous exercise in using both to piece a new
         language together. I love that there will always be somethng new to

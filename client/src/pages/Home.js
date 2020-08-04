@@ -1,5 +1,6 @@
 import React from "react";
+import Welcome from "../components/Welcome";
 
 export default function Home() {
-  return <p>home</p>;
+  return <Welcome />;
 }

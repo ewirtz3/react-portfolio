@@ -1,6 +1,5 @@
 import React from "react";
-import { Dropdown, Header, Icon, Container, Menu } from "semantic-ui-react";
-import "../assets/css/menuDropdown.css";
+import { Dropdown } from "semantic-ui-react";
 
 export default function MenuDropdown() {
   return (
