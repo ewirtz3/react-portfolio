@@ -3,6 +3,7 @@ import { Container, Header, Grid, Image, Segment } from "semantic-ui-react";
 import "../assets/css/About.css";
 import AboutMeBlurb from "../components/AboutMe/AboutMe";
 import profilePic from "../components/AboutMe/profilePic.jpg";
+import resume from "../components/AboutMe/resume 7-2020 (1).pdf";
 
 export default function About() {
   return (
@@ -23,6 +24,11 @@ export default function About() {
               floated="left"
             />
             <AboutMeBlurb />
+            <Header size="small">
+              <a href={resume} target="_blank">
+                View my resume
+              </a>
+            </Header>
           </Segment>
         </Grid.Row>
       </Grid>
