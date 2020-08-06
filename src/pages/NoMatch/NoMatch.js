@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Segment, Icon, Header } from "semantic-ui-react";
+import { Container, Segment, Icon } from "semantic-ui-react";
 import "./NoMatch.css";
 
 export default function NoMatch() {

@@ -1,11 +1,22 @@
 import React from "react";
-import { Container, Header, Grid, Image, Segment } from "semantic-ui-react";
+import {
+  Container,
+  Header,
+  Grid,
+  Image,
+  Segment,
+  Button,
+} from "semantic-ui-react";
 import "./About.css";
 import AboutMeBlurb from "../../components/AboutMe/AboutMe";
 import profilePic from "../../components/AboutMe/profilePic.jpg";
-import resume from "../../components/AboutMe/resume 7-2020 (1).pdf";
+import resume from "./resume.pdf";
 
 export default function About() {
+  const handleClick = (event) => {
+    event.preventDefault();
+    window.open(resume);
+  };
   return (
     <Container>
       <Grid id="about-me" rows={2}>
@@ -23,11 +34,9 @@ export default function About() {
               floated="left"
             />
             <AboutMeBlurb />
-            <Header size="small">
-              <a href={resume} target="_blank" rel="noopener noreferrer">
-                View my resume
-              </a>
-            </Header>
+            <Button size="small" onClick={handleClick}>
+              View my resume
+            </Button>
           </Segment>
         </Grid.Row>
       </Grid>
