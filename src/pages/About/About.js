@@ -1,22 +1,11 @@
 import React from "react";
-import {
-  Container,
-  Header,
-  Grid,
-  Image,
-  Segment,
-  Button,
-} from "semantic-ui-react";
+import { Container, Header, Grid, Image, Segment } from "semantic-ui-react";
 import "./About.css";
 import AboutMeBlurb from "../../components/AboutMe/AboutMe";
 import profilePic from "../../components/AboutMe/profilePic.jpg";
 import resume from "./resume.pdf";
 
 export default function About() {
-  const handleClick = (event) => {
-    event.preventDefault();
-    window.open(resume);
-  };
   return (
     <Container>
       <Grid id="about-me" rows={2}>
@@ -34,9 +23,15 @@ export default function About() {
               floated="left"
             />
             <AboutMeBlurb />
-            <Button size="small" onClick={handleClick}>
-              View my resume
-            </Button>
+            <Header size="small">
+              <a
+                href={process.env.PUBLIC_URL + resume}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View my resume
+              </a>
+            </Header>
           </Segment>
         </Grid.Row>
       </Grid>
