@@ -37,8 +37,9 @@ function App() {
             <NoMatch />
           </Route>
         </Switch>
-        <Footer />
+        <div className="push"></div>
       </div>
+      <Footer className="footer" />
     </Router>
   );
 }

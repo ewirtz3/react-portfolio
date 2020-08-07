@@ -6,14 +6,13 @@ import MenuDropdown from "../MenuDropdown/MenuDropdown";
 function Nav() {
   return (
     <Grid textAlign="center" id="nav">
-      <Grid.Row columns={3} verticalAlign="bottom">
+      <Grid.Row columns={2} verticalAlign="bottom">
         <Grid.Column>
           <Header size="huge" id="emily">
             <Icon name="code" size="large" id="code" />
             emily wirtz
           </Header>
         </Grid.Column>
-        <Grid.Column />
         <Grid.Column>
           <MenuDropdown />
         </Grid.Column>

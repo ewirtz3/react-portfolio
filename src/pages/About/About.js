@@ -3,7 +3,6 @@ import { Container, Header, Grid, Image, Segment } from "semantic-ui-react";
 import "./About.css";
 import AboutMeBlurb from "../../components/AboutMe/AboutMe";
 import profilePic from "../../components/AboutMe/profilePic.jpg";
-import resume from "./resume.pdf";
 
 export default function About() {
   return (
@@ -25,9 +24,10 @@ export default function About() {
             <AboutMeBlurb />
             <Header size="small">
               <a
-                href={process.env.PUBLIC_URL + resume}
+                href={`${process.env.PUBLIC_URL}/resume8.20.pdf`}
                 target="_blank"
                 rel="noopener noreferrer"
+                download
               >
                 View my resume
               </a>
