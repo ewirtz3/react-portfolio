@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Header, Grid, Image, Segment } from "semantic-ui-react";
 import "./About.css";
-import AboutMeBlurb from "../../components/AboutMe/AboutMe";
+import AboutMeBlurb from "../../components/AboutMe";
 import profilePic from "../../components/AboutMe/profilePic.jpg";
 
 export default function About() {

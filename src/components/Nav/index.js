@@ -1,7 +1,7 @@
 import React from "react";
 import { Header, Grid, Icon } from "semantic-ui-react";
 import "./Nav.css";
-import MenuDropdown from "../MenuDropdown/MenuDropdown";
+import MenuDropdown from "../MenuDropdown";
 
 function Nav() {
   return (
