@@ -1,5 +1,6 @@
 import React from "react";
 import { Dropdown } from "semantic-ui-react";
+import { Link } from "react-router-dom";
 
 export default function MenuDropdown() {
   return (
@@ -13,16 +14,18 @@ export default function MenuDropdown() {
       wrapSelection
     >
       <Dropdown.Menu>
-        <Dropdown.Item text="Home" href={process.env.PUBLIC_URL + "/home"} />
-        <Dropdown.Item text="About" href={process.env.PUBLIC_URL + "/about"} />
-        <Dropdown.Item
-          text="Contact"
-          href={process.env.PUBLIC_URL + "/contact"}
-        />
-        <Dropdown.Item
-          text="Portfolio"
-          href={process.env.PUBLIC_URL + "/portfolio"}
-        />
+        <Dropdown.Item>
+          <Link to={process.env.PUBLIC_URL + "/home"}>Home</Link>
+        </Dropdown.Item>
+        <Dropdown.Item>
+          <Link to={process.env.PUBLIC_URL + "/about"}>About</Link>
+        </Dropdown.Item>
+        <Dropdown.Item>
+          <Link to={process.env.PUBLIC_URL + "/contact"}>Contact</Link>
+        </Dropdown.Item>
+        <Dropdown.Item>
+          <Link to={process.env.PUBLIC_URL + "/portfolio"}>Portfolio</Link>
+        </Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
   );
